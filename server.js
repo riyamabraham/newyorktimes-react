@@ -20,8 +20,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("app/build"));
 }
 
-mongoose.connect('mongodb://localhost/nyt-react');
-//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+//mongoose.connect('mongodb://localhost/nyt-react');
+//MONGODB_URI => mongodb://heroku_12345678:random_password@ds029017.mLab.com:29017/heroku_12345678
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nyt-react");
+mongoose.connect('mongodb://heroku_12345678:random_password@ds029017.mLab.com:29017/heroku_12345678');
 //mongoose.connect('mongodb://heroku_rkhhrkk9:ltf4sou76eu5sb77s0cronvvb8@ds031792.mlab.com:31792/heroku_rkhhrkk9');
 // mongodb://<dbuser>:<dbpassword>@ds047592.mlab.com:47592/heroku_t60d2qtp
 
