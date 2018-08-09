@@ -1,0 +1,7 @@
+.jumbotron{
+    background-image: url(./../images/nyt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: 100% 100%;
+    background-attachment: fixed;
+}
